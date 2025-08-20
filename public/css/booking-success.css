@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.confirmation-box {
+  background-color: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  animation: fadeIn 0.8s ease;
+  max-width: 500px;
+  width: 90%;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.confirmation-box h2 {
+  font-size: 1.8rem;
+  color: #c62828; 
+  margin-bottom: 1rem;
+}
+
+.confirmation-box p {
+  font-size: 1.05rem;
+  color: #333;
+  margin-bottom: 2rem;
+}
+
+.confirmation-box a {
+  text-decoration: none;
+  background-color: #c62828;
+  color: white;
+  padding: 12px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.confirmation-box a:hover {
+  background-color: #a31414;
+  transform: scale(1.05);
+}
