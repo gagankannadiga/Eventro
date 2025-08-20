@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Booking Confirmed | Eventro</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/booking-success.css" />
+</head>
+<body>
+  <div class="confirmation-box">
+    <h2>🎉 Booking Confirmed!</h2>
+    <p id="user-message">Thank you for booking with Eventro. We'll contact you soon!</p>
+    <a href="/">Return Home</a>
+  </div>
+
+  <script>
+    const params = new URLSearchParams(window.location.search);
+    const name = params.get('name');
+    if (name) {
+      document.getElementById('user-message').innerText =
+        `Thank you, ${name}, for booking with Eventro. We'll contact you soon!`;
+    }
+  </script>
+</body>
+</html>
